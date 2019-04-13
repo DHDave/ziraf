@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ziraf/precache-manifest.b7de8fe5199fd32ff7b6aee6c4f88da3.js"
+  "/ziraf/precache-manifest.4aec88f6ac267bc6a87edba47d7c361c.js"
 );
 
 workbox.clientsClaim();
