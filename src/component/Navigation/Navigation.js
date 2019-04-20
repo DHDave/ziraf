@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, NavLink, Switch } from 'react-router-dom';
 import Image from 'react-image-resizer';
+import HeaderLogo from "./Images/HeaderLogo.svg"
 
 import Home from '../Home/Home';
 import Team from '../Team/Team';
@@ -16,8 +17,13 @@ export default function Navbar() {
       <header className="App-header">
         <div className="logo">
           <div className="img"> 
-            <Image
-              src={logo}
+            {/* <Image
+              src={HeaderLogo }
+              height={ 60 }
+              width={ 60 }
+            /> */}
+              <img
+              src={HeaderLogo}
               height={ 60 }
               width={ 60 }
             />

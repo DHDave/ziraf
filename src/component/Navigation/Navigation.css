@@ -53,3 +53,17 @@
     display: block;
     clear: both;
   }
+
+  /* Switch to hamburger menu on tablets */
+
+@media only screen and ( max-width:1024px) {
+	#et_mobile_nav_menu {
+		display: block;
+	}
+	#menu {
+		display: none;
+	}
+	/* .et_header_style_left .mobile_menu_bar {
+		padding-bottom: 50px;
+	} */
+}
