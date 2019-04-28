@@ -1,7 +1,8 @@
 .side-drawer {
     height: 100%;
-    background-color: white;
-    box-shadow: 1px 0 7px rgba(0, 0, 0, 0.5);
+    background-color: rgb(24, 6, 6);
+    opacity: 0.97;
+    box-shadow: 1px 0 7px rgba(0, 0, 0, 3);
     position: fixed;
     top: 0;
     left: 0;
@@ -14,6 +15,7 @@
 
 .side-drawer.open {
     transform: translateX(0);
+    background-color: rgb(44, 43, 41);
 }
 
 .side-drawer ul {
@@ -29,7 +31,7 @@
 }
 
 .side-drawer a {
-    color: #521751;
+    color: #fa923f;
     text-combine-upright: none;
     font-size: 1.2rem;
     text-decoration: none;
@@ -37,7 +39,9 @@
 
 .side-drawer a:hover,
 .side-drawer a:active {
-    color: #fa923f;
+    color: #f7760c;
+    font-size: 1.35rem;
+
 }
 
 @media (min-width: 769px) {

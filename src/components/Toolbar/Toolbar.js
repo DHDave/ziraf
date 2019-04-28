@@ -12,13 +12,16 @@ const toolbar = props => (
             <div className="toolbar__toggle-button">
                 <DrawerToggleButton click={props.drawerClickHandler} />
             </div>
-           <div className = "toolbar__logo">               
-            <a href="#" class="logo">
-                    <img src={Logo} alt="Ziraf Logo"></img>
-            </a> 
+            <div className = "spacer" />
+            <div className = "toolbar__logo">               
+                {/* <a href="#"> */}
+                <div><a href="#" className="logo">
+                        <img src={Logo} alt="Ziraf Logo"></img>
+                </a> 
+                </div>
             </div> 
-           <div className = "spacer" />
-           <div className = "toolbar_navigation-items">
+            <div className = "spacer1" />
+            <div className = "toolbar_navigation-items">
                <ul>
                     <li> <NavLink to="/">Home</NavLink> </li>
                     <li> <NavLink to="/Team">Team</NavLink> </li>

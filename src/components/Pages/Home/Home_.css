@@ -113,11 +113,11 @@ nav {
     display: inline-block;
 }
 
-.logo img {
+/* .logo img {
     width: 175px;
-/*    border: 2px solid gold;*/
+   border: 2px solid gold;
     vertical-align: middle;
-}
+} */
 
 .navbar {
     display: flex;
@@ -201,11 +201,11 @@ main h1 {
     padding: 10px 25px;
 }
 
-#fbowner {
+/* #fbowner {
     display: flex;
     margin: 50px 0px;
     margin-bottom: 100px;
-}
+} */
 
 #fbowner p {
     padding: 10px 0px;
@@ -367,3 +367,9 @@ footer p {
     margin: 0;
 }
 */
+
+#fbowner {
+    display: flex;
+    margin: 50px 0px;
+    margin-bottom: 100px;
+}

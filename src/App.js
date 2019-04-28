@@ -23,6 +23,7 @@ import { HashRouter } from 'react-router-dom';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop'
+// import CloseDrawer from './components/SideDrawer/CloseDrawer'
 
 import Routing from './components/Toolbar/Navigation'
 
@@ -41,19 +42,31 @@ class App extends Component {
     this.setState({sideDrawerOpen: false})
   };
 
+
+  // handleClose = () => {
+  //   this.setState({sideDrawerOpen: false})
+  // };
+
+
+  // closeDrawerClickHandler = () => {
+  //   this.setState({sideDrawerOpen: false})
+  // };
+
   render() {
     let backdrop;
+    // let closedrawer;
 
     if(this.state.sideDrawerOpen) {
       
       backdrop = <Backdrop click={this.backdropClickHandler} />
+      // closedrawer = <CloseDrawer click={this.closeDrawerClickHandler}/>
     }
     return (
       <div style={{height: '100%'}}>
         <HashRouter>
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />;
-          {backdrop}       
+          {backdrop}   
           <main style = {{marginTop: '64px'}}>
           <Routing />
           </main>
